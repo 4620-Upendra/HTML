@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS PASS APPLICTION FROM </title>
+    <style>
+        header{
+            background-color: aqua;
+            margin: 2px;  
+            border-radius: 30px; 
+        }
+        body{
+            margin-left: 20% ;
+            margin-right: 20%;
+            background-color: #f5f9ff;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>    
+        <center>
+            <br>
+            <img src="https://tse2.mm.bing.net/th/id/OIP.YO-bgj3q9kTHmxkEdzSseAHaEJ?pid=Api&P=0&h=180" width="60px">
+            <h2 style="color: rgb(21, 21, 160);">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+            <H3 style="color: rgb(132, 106, 106);" >GENERAL BUS PASS APPLICATION</H3>
+            <br>
+        </center>
+    </header>
+    <fieldset>
+        <legend style="color: rgba(77, 15, 135, 0.9);">Applicant Details</legend>  
+        <form action="./assign_6.html" method=""  autocomplete="off">
+            <label for="name">Name<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="20" id="name" name="name" placeholder="name" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="father">Father's Name<span style="color: red;">*</span></label>
+            <input type="text" maxlength="20" id="father" name="Father's/ Guardian's Name" placeholder="Father name" required> 
+            <br>
+            <br>
+
+            <label for="date">Date of birth<span style="color: red;">*</span></label>
+            <input type="tel"  id="date" name="DOB" value="2025-07-11" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label>Gender<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="age">Age As on:</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date"  id="age" name="AGE" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="Aadhaar No">Aadhaar No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number"  id="Aadhaar No" name="Aadhaar No" value="" placeholder="123456789012" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <br>
+            <label for="WhatsApp No">WhatsApp No<span style="color: red;">*</span></label>&nbsp;
+            <input type="number"  id="WhatsApp No" name="WhatsApp No" placeholder="9786543224" >&nbsp;&nbsp;&nbsp;
+            
+            <label for="email">E-mail id<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email"  id="email" name="email" placeholder="enter your email" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <br>
+            <label for="photo">Photo<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" id="photo" name="photo">
+        <!-- </form> -->
+        
+    </fieldset>
+    <fieldset>
+        <legend style="color: rgba(77, 15, 135, 0.9);">Residential Address Details</legend>
+        <form>
+            <label for="address">Applicant's Address Details<span style="color: red;">*</span></label>
+            <textarea maxlength="20" cols="15" rows="4" placeholder="enter Address"></textarea>&nbsp;&nbsp;&nbsp;
+
+            <label for="district">District<span style="color: red;">*</span></label>
+            <select name="district" id="district">
+                <option disabled selected>select</option> 
+                <option>HYDERABAD</option> 
+                <option>WARANGAL</option> 
+                <option>MAHABUBABAD</option> 
+                <option>NIZAMABAD</option> 
+            </select>
+            <br>
+            <br>
+            <label for="Mandal">Mandal<span style="color: red;">*</span></label>
+            <select id="Mandal" name="Mandal">
+                <option disabled selected>select</option> 
+                <option>AMBERPET</option> 
+                <option>SAIDABAD</option> 
+                <option>KHAIRATABAD</option> 
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Village">Village<span style="color: red;">*</span></label>
+            <select id="Village" name="village">
+                <option disabled selected>select</option> 
+                <option>ABBAPUR</option> 
+                <option>BHITPALLI</option> 
+                <option>CHINNA MALLAREDDY</option> 
+            </select>
+            <br>
+            <br>
+            <label for="pincode">Pincode<span style="color: red;">*</span></label>
+            <input type="number" id="pincode" placeholder="enter pincode">
+        <!-- </form> -->
+    </fieldset>
+    <fieldset>
+        <legend style="color: rgba(77, 15, 135, 0.9);">PASS TPE DETAILS</legend>
+        <label for="city">city<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="city" name="city">
+                <option disabled selected>select</option> 
+                <option>HYDERABAD</option> 
+                <option>WARANGAL</option> 
+                <option>MAHABUBABAD</option> 
+            </select>
+            <br>
+        <label for="pass type">Pass Type<span style="color: red;">*</span></label>
+            <select id="pass type" name="pass type">
+                <option disabled selected>select</option> 
+                <option>GREATER PASS</option> 
+                <option>ORDINARY PASS</option> 
+                <option>METRO EXPRESS PASS</option> 
+                <option>METRO DELUXE PASS</option> 
+            </select>
+            
+    </fieldset>
+    <fieldset>
+        <legend style="color:rgba(77, 15, 135, 0.9);">Mode of Payment & Pass Collection</legend>
+        <!-- <form action="assign_6.html"> -->
+            <label for="payment mode">Payment Mode<span style="color: red;">*</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="payment mode" name="payment mode">
+                <option disabled selected>select Payment Mode</option> 
+                <option value="card payment">Card Payments</option> 
+                <option value="online payment">Digital/Online Payments</option> 
+                <option value="payment payment">Payment at Counter</option> 
+            </select>
+            <br>
+            <label for="Pass Delivery Mode">Pass Delivery Mode<span style="color: red;">*</span></label>
+            <select id="Pass Delivery Mode">
+                <option disabled selected>select Pass Delivery Mode</option> 
+                <option>Email Delivery</option> 
+                <option>Physical Delivery</option> 
+                <option>On-Site Pickup</option> 
+                <option>Pickup at counter</option> 
+            </select>
+            <br>
+            <label>Center at which you want to collect pass</label>
+           <select><option disabled selected>---select---</option> 
+                <option>RTC ABIDS-HYD</option> 
+                <option>RTC CHARMINAR-HYD</option> 
+                <option>RTC KPHB-HYD</option> 
+                <option>RTC KUKATAPALLY-HYD</option> 
+                </select>
+                <center>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.DktZ0UqrHHehPNWcQqxSMwHaCe?pid=Api&P=0&h=180" width="40%">
+        <img src="https://retromania.gg/img/captcha.png" width="10%">
+        <br>
+        <button style="background-color: rgb(211, 211, 212); width: 12%;" type="submit">Submit</button>
+        </center>
+        </form>
+    </fieldset>
+    <!-- <center>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.DktZ0UqrHHehPNWcQqxSMwHaCe?pid=Api&P=0&h=180" width="40%">
+        <img src="https://retromania.gg/img/captcha.png" width="10%">
+        <br>
+        <button style="background-color: rgb(211, 211, 212); width: 12%;" type="submit">Submit</button>
+    </center> -->
+</body>
+</html>
